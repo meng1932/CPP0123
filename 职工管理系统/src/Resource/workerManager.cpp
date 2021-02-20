@@ -24,3 +24,10 @@ void WorkerManager::Show_Menu()
     cout << "********************************************" << endl;
     cout << endl;
 }
+
+void WorkerManager::Exit_System()
+{
+    system("read -p '任意键退出...' var");
+    cout << "欢迎下次使用！" << endl;
+    exit(0);
+}

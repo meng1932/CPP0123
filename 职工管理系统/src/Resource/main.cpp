@@ -4,10 +4,38 @@ using namespace std;
 
 int main()
 {
-    //管理者对象
     WorkerManager wm;
-    wm.Show_Menu();
-    system("read -p '任意键...' var");
-    system("clear");
-    return 0;
+    int choice = 0;
+    while (true)
+    {
+        wm.Show_Menu(); //展示菜单
+        cout << "请输入您的选择:" << endl;
+        cin >> choice;
+        switch (choice)
+        {
+        case 0: //退出系统
+            wm.Exit_System();
+            break;
+        case 1: //添加职工
+            break;
+        case 2: //显示职工
+            break;
+        case 3: //删除职工
+            break;
+        case 4: //修改职工
+            break;
+        case 5: //查找职工
+            break;
+        case 6: //排序职工
+            break;
+        case 7: //清空文件
+            break;
+        default:
+            system("clear");
+            cout << "输入有误，请重新请输入您的选择:" << endl;
+            break;
+        }
+        system("read -p '任意键...' var");
+        return 0;
+    }
 }
