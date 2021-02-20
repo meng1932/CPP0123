@@ -6,9 +6,9 @@
       "command": "/usr/bin/clang++",
       "args": [
         "-g",
-        "${file}",
+        "${fileDirname}/*.cpp", //编译所有文件
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "build/${fileBasenameNoExtension}"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
