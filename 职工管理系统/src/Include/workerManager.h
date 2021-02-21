@@ -9,8 +9,8 @@ private:
 public:
     WorkerManager(/* args */);
 
-    void Show_Menu();   // 展示菜单
-    void Exit_System(); //退出管理程序
+    void showMenu();   // 展示菜单
+    void exitSystem(); //退出管理程序
 
     ~WorkerManager();
 };

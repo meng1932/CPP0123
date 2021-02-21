@@ -8,13 +8,13 @@ int main()
     int choice = 0;
     while (true)
     {
-        wm.Show_Menu(); //展示菜单
+        wm.showMenu(); //展示菜单
         cout << "请输入您的选择:" << endl;
         cin >> choice;
         switch (choice)
         {
         case 0: //退出系统
-            wm.Exit_System();
+            wm.exitSystem();
             break;
         case 1: //添加职工
             break;

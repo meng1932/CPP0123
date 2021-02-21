@@ -9,7 +9,7 @@ WorkerManager::~WorkerManager()
 {
 }
 
-void WorkerManager::Show_Menu()
+void WorkerManager::showMenu()
 {
     cout << "********************************************" << endl;
     cout << "*********  欢迎使用职工管理系统！ **********" << endl;
@@ -25,7 +25,7 @@ void WorkerManager::Show_Menu()
     cout << endl;
 }
 
-void WorkerManager::Exit_System()
+void WorkerManager::exitSystem()
 {
     system("read -p '任意键退出...' var");
     cout << "欢迎下次使用！" << endl;
